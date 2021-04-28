@@ -18,4 +18,16 @@ class Hiker
   def visit(park)
     @parks_visited << park
   end
+
+  def possible_trails
+    trails = []
+    @parks_visited.each do |park|
+      park.trails.find_all do |trail|
+        if trail.level == @experience_level
+          trails << trail
+        end
+      end
+    end
+    trails
+  end
 end

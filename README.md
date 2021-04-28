@@ -86,11 +86,14 @@ pry(main)> hiker.pack('trail mix', 3)
 pry(main)> hiker.snacks
 #=> {"water"=>1, "trail mix"=>3}
 
+
 pry(main)> hiker.pack('water', 1)
 
 pry(main)> hiker.snacks
 #=> {"water"=>2, "trail mix"=>3}
 
+
+________________________________
 pry(main)> hiker.parks_visited
 #=> []
 
@@ -156,12 +159,14 @@ pry(main)> park2.add_trail(trail5)
 
 pry(main)> park2.add_trail(trail6)
 
-pry(main)> hiker = Hiker.new('Dora', :moderate)
+pry(main)> hiker = Hiker.new('Dora', :moderate) #
 #=> #<Hiker:0x00007fce55a91fc0...>
 
 pry(main)> hiker.visit(park1)
 
 pry(main)> hiker.visit(park2)
+
+-------------------------------------------------------------------------------------
 
 pry(main)> park1.trails_shorter_than(2.5)
 #=> [#<Trail:0x00007fce55aa0fc0...>, #<Trail:0x00007fce568c3620...>]
