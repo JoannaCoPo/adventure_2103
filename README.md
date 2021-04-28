@@ -238,6 +238,7 @@ pry(main)> hiker.pack('carrot', 3)
 pry(main)> hiker.favorite_snack
 #=> "apple"
 
+__________________________________________
 pry(main)> park1.add_trail(trail1)
 
 pry(main)> park1.add_trail(trail2)

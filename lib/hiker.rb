@@ -30,4 +30,13 @@ class Hiker
     end
     trails
   end
+
+  def favorite_snack
+    fav = nil
+    max = @snacks.values.max
+    @snacks.each do |item, quantity| 
+      fav = item if quantity == max
+    end
+    fav
+  end
 end

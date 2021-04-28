@@ -22,4 +22,13 @@ class Park
       trail.length
     end
   end
+
+  def trails_by_level
+    trails_by_level = Hash.new
+    @trails.each do |trail|
+      level = trail.level
+      trails_by_level[trail.level] = trail.name
+    end
+    trails_by_level
+  end
 end

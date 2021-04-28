@@ -63,4 +63,14 @@ RSpec.describe Hiker do
     expect(hiker.possible_trails).to eq([trail2, trail4, trail6])
   end
 
+  it 'can pack snacks' do
+    hiker = Hiker.new('Dora', :moderate)
+    hiker.pack('water', 2)
+    hiker.pack('trail mix', 1)
+    hiker.pack('apple', 4)
+    hiker.pack('carrot', 3)
+    # require "pry"; binding.pry
+    expect(hiker.favorite_snack).to eq("apple")
+  end
+
 end
