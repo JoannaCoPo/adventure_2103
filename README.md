@@ -33,6 +33,9 @@ pry(main)> trail1.length
 pry(main)> trail1.level
 #=> :easy
 
+
+
+
 pry(main)> trail2 = Trail.new({name: 'Cohab Canyon', length: '1.7 miles', level: :moderate})
 #=> #<Trail:0x00007fdd66946060 @length="1.7 miles", @level=:moderate, @name="Cohab Canyon">
 
@@ -45,12 +48,16 @@ pry(main)> park1.name
 pry(main)> park1.trails
 #=> []
 
+
 pry(main)> park1.add_trail(trail1)
 
 pry(main)> park1.add_trail(trail2)
 
 pry(main)> park1.trails
 #=> [#<Trail:0x00007fdd67232750...>, #<Trail:0x00007fdd66946060...>]
+
+
+__________________________________________
 
 pry(main)> trail3 = Trail.new({name: 'Tower Bridge', length: '3.0 miles', level: :moderate})
 #=> #<Trail:0x00007fdd68019a30 @length="3.0 miles", @level=:moderate, @name="Tower Bridge">
